@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="icon" href="icons/ficons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub_header">
+        <nav>
+            <a class="icon-animation" href="https://kgeu.ru/"><img src="icons/logo2.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- при адаптации под мобильное -->
+                <ul>
+                    <li><a href="/index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="/about.html">О НАС</a></li>
+                    <li><a href="/course.html">КУРС</a></li>
+                    <li><a href="/blog.html">БЛОГ</a></li>
+                    <li><a href="/contact.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Наш сертификат & Онлайн-программы на 2022</h1>
+    </section>
+
+    <!-- Контент блок страницы  -->
+
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="blog_left">
+                    <img src="img/certificate.jpg" alt="">
+                    <h2>Наш сертификат & Онлайн-программы на 2022</h2>
+                    <p>Мы развиваемся вместе с индустрией и постоянно обновляем материалы. Поэтому они актуальны всегда.
+                        Вам
+                        предстоит учиться в течение 10-20 месяцев, примерно по 20 часов в неделю. Вы узнаете, как
+                        устроены
+                        программа и обучение. Ознакомитесь с организационными деталями и подготовите компьютер к
+                        написанию
+                        кода. Кроме этого, вспомните ключевые моменты из вводного курса: так проще перейти к новому
+                        материалу.</p>
+                    <br>
+                    <p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют от
+                        нас анализа системы обучения кадров, соответствует насущным потребностям.</p>
+                    <br>
+                    <p>Вводный курс поможет почувствовать себя в роли разработчика и понять, хотите ли вы развиваться в
+                        этом
+                        направлении. Вы узнаете о базовом синтаксисе HTML и CSS, научитесь управлять цветом и шрифтами и
+                        размещать блоки на странице. А ещё напишете программу на языке JavaScript и сделаете страницу
+                        интерактивной. Всё это — с помощью четырёх практических проектов.</p>
+                    <br>
+                    <p>Без взаимодействия с сервером невозможно создавать полноценное веб-приложение. Вы изучите, как
+                        работает JavaScript в среде Node.js, поднимете и настроите сервер. Познакомитесь с фреймворком
+                        Express.js и базой данных MongoDB. Создадите серверный API для сайта, над которым работали
+                        раньше.
+                    </p>
+                    <div
+                        style="background-image: url(img/certificate2.jpg); width: 100%; height: 60vh; background-position: center; background-size: cover; margin-top: 30px;">
+                    </div>
+
+                    <div class="comment-box">
+
+                        <h3>Оставить комментарий</h3>
+
+                        <form class="comment-form" action="/form-handler.php" method="post">
+                            <input type="text" name="name" placeholder="Введите Имя" required>
+                            <input type="email" name="email" placeholder="Введите E-mail" required>
+                            <textarea rows="5" name="message" placeholder="Ваш комментарий"></textarea>
+                            <button type="submit" class="hero-btn red-btn">ОТПРАВИТЬ КОММЕНТАРИЙ</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="blog_right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Fullstack-разработчик на Python</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Fullstack-разработчик на PHP и JavaScript</span>
+                        <span>32</span>
+                    </div>
+                    <div>
+                        <span>Backend-разработчик на PHP</span>
+                        <span>26</span>
+                    </div>
+                    <div>
+                        <span>Python для веб-разработки</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machin Lerning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>AvtoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>О Нас</h4>
+        <p>Образовательные услуги оказываются АНО ДПО «ШАД».<br>
+            Это Школа анализа данных, основанная КГЭУ.<br>Оказывает услуги на основании Лицензии № 036031 от 24 марта
+            2022 года.</p>
+        <p class="footer__phone">
+            <a class="footer__phone-link t t--1" href="tel:+78002221289"> 8 (800) 222-12-89 </a>
+            <span class="footer__caption p p--3"> Контактный центр </span>
+        </p>
+        <div class="icons">
+            <a style="text-decoration: none"
+                href="https://www.facebook.com/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%9A%D0%93%D0%AD%D0%A3-189258835130676/"
+                class="fa fa-facebook"></a>
+            <a style="text-decoration: none" href="https://twitter.com/kgeuru" class="fa fa-twitter"></a>
+            <a style="text-decoration: none" href="https://www.instagram.com/kgeu_official/"
+                class="fa fa-instagram"></a>
+            <a style="text-decoration: none"
+                href="https://ru.linkedin.com/school/%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%BA%D0%B3%D1%8D%D1%83-/"
+                class="fa fa-linkedin"></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by a student of the KSPUE</p>
+    </section>
+
+    <!-- button arrowUp -->
+    <a href="#up" class="arrowUp">
+        <img src="icons/up.svg" alt="UP" class="arrowUp">
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="icon" href="../icons/ficons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="up" class="header__FsP">
+        <div class="navv">
+            <nav class="container container__FsP">
+                <a class="icon-animation" href="https://kgeu.ru/"><img src="../icons/logo2.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i> <!-- при адаптации под мобильное -->
+                    <ul>
+                        <li><a href="/course.html">КУРСЫ</a></li>
+                        <li><a href="/index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="/about.html">О НАС</a></li>
+                        <li><a href="/blog.html">БЛОГ</a></li>
+                        <li><a href="/contact.html">КОНТАКТЫ</a></li>
+                        <li><a class="footer__phone-link t t--1" href="tel:+78002221289"> +7 (800) 222-12-89 </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </section>
+
+    <section class="home">
+        <div class="banner">
+            <div class="container">
+                <div class="row_FsP">
+                    <div class="textbox">
+                        <span>Профессия</span>
+                        <h1>Fullstack-разработчик на Python</h1>
+                        <p>Практический онлайн-курс для тех, кто хочет:</p>
+                        <ul>
+                            <li>Освоить программирование</li>
+                            <li>Стать Python-разработчиком</li>
+                            <li>Создавать свои веб-проекты</li>
+                        </ul>
+                        <button data-modal="consultation" href="" class="hero-btn btn">Записаться на курс</button>
+                        <a href="#S1" class="hero-btn hero-btn_red btn">Программа курса</a>
+                    </div>
+                    <div class="textbox">
+                        <div class="textbox__modal">
+                            <div class="timer">
+                                <div class="timer__items">
+                                    <div class="timer__item timer__days">00</div>
+                                    <div class="timer__item timer__hours">00</div>
+                                    <div class="timer__item timer__minutes">00</div>
+                                    <div class="timer__item timer__seconds">00</div>
+                                </div>
+                                <div class="timer__seil">40%</div>
+                            </div>
+                            <form class="feed-form feed-form_mt25" action="/form-handler.php" method="post">
+                                <input type="text" name="name" placeholder="Имя" required>
+                                <input type="email" name="email" placeholder="E-mail" required>
+                                <input type="phone" name="phone" placeholder="Телефон">
+                                <input type="promo" name="promo" placeholder="Промокод (если есть)" required>
+                                <button type="submit" class="hero-btn btn">Заказать консультацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get -->
+    <section class="get">
+        <div class="container">
+            <div class="blok-top">
+                <h2 class="FP2">Вы получите:</h2>
+                <div class="bloks">
+                    <div class="blok">
+                        <img src="..//img/FullstackPython/blok1.png" alt="blok1.png">
+                        <div class="botom-text">Актуальные навыки, которые нужны работодателям</div>
+                    </div>
+                    <div class="blok">
+                        <img src="..//img/FullstackPython/blok2.png" alt="blok2.png">
+                        <div class="botom-text">Знания от практикующих экспертов</div>
+                    </div>
+                    <div class="blok">
+                        <img src="..//img/FullstackPython/blok3.png" alt="blok3.png">
+                        <div class="botom-text">Помощь менторов</div>
+                    </div>
+                    <div class="blok">
+                        <img src="..//img/FullstackPython/blok4.png" alt="blok4.png">
+                        <div class="botom-text">Содействие в трудоустройстве</div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-bottom">
+                <div class="block-left">
+                    <img src="..//img/FullstackPython/blok5.png" alt="blok5.png">
+                </div>
+                <div class="block-right">
+                    <h3>Чем занимается веб-разработчик</h3>
+                    <div class="text-block">
+                        <p>Создает веб-сайты, сервисы и приложения, которыми мы пользуемся каждый день</p>
+                        <p>Разрабатывает интернет-магазины, интернет-банки, поисковые системы, карты и почтовые клиенты
+                        </p>
+                        <p>Проектирует внешний вид сайта — интерфейс. А также программирует сервисную часть —
+                            настраивает сервер</p>
+                    </div>
+                    <p class="text-bottom">Веб-разработчики очень востребованы сейчас, потому что прибыль
+                        бизнеса напрямую зависит от удобства использования цифрового продукта компании</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="facilities">
+        <section class="container">
+            <h2 class="FP2">Для кого этот курс</h2>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="../img/FullstackPython/blok6.png" alt="">
+                    <h3>Для тех, кто хочет сменить профессию</h3>
+                    <p>Хотите сменить профессию на востребованную и высокооплачиваемую, Вы справитесь даже без
+                        технического бэкграунда — просто следуйте программе курса.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="../img/FullstackPython/blok7.png" alt="">
+                    <h3>Для студентов</h3>
+                    <p>Студент и еще учитесь. Мы дадим актуальные знания и навыки для вашей первой работы. А вы сможете
+                        ее найти уже в конце обучения и достойно зарабатывать.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="../img/FullstackPython/blok8.png" alt="">
+                    <h3>Не программистов,
+                        но уже работающим в IT</h3>
+                    <p>Уже работаете в IT (например,тестировщиком или сотрудником Helpdesk). Мы подскажем, как перейти в
+                        востребованное направление, и поможем вам зарабатывать больше.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Программа курса -->
+    <section id="S1" class="accor">
+        <div class="container">
+            <h2 class="FP2">Программа курса</h2>
+            <p class="FPp2">За четыре месяца вы изучите основы и сможете перейти к более сложным вещам. <span style="color: blueviolet;">А через 8 месяцев приступите к поиску работы</span></p>
+            <div class="accordion-body">
+                <div class="accordion">
+                    <div class="accordion-futer">
+                        <div class="month">4 месяца</div>
+                        <div class="name">Введение в веб-разработку</div>
+                        <div class="need">Обязательно к изучению</div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Введение</div>
+                        <div class="content">
+                            <ol>
+                                <li>Введение</li>
+                                <li>Введение в разработку</li>
+                                <li>Основные понятия программирования</li>
+                                <li>Markdown и Git</li>
+                            </ol>
+                            <div class="label2">Практика:</div>
+                            <ol>
+                                <li>Введение</li>
+                                <li>Введение в разработку</li>
+                                <li>Основные понятия программирования</li>
+                                <li>Markdown и Git</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Базовая верстка</div>
+                        <div class="content">
+                            <ol>
+                                <li>Базовый HTML</li>
+                                <li>Тренажер HTML</li>
+                                <li>Базовый CSS</li>
+                                <li>Сессии и Cookie</li>
+                                <li>Тренажер по PHP</li>
+                            </ol>
+                            <div class="label2">Практика:</div>
+                            <ol>
+                                <li>Сайт-визитка</li>
+                                <li>Новостная страница</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Базовый Frontend</div>
+                        <div class="content">
+                            <ol>
+                                <li>Базовый Frontend</li>
+                                <li>Числа и строки</li>
+                                <li>Условия</li>
+                                <li>Циклы и массивы</li>
+                                <li>Функции и объекты</li>
+                                <li> Тренажер по JavaScript</li>
+                            </ol>
+                            <div class="label2">Практика:</div>
+                            <ol>
+                                <li>Приложения с обработкой</li>
+                                <li>Пользовательского ввода</li>
+                                <li>Простой калькулятор</li>
+                                <li>Игра "Угадайка" с использованием алгоритма бинарного поиска</li>
+                                <li>Справочник "Экзотические фрукты"</li>
+                                <li>Генератор случайных пользовательских данных</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Базовый Backend</div>
+                        <div class="content">
+                            <ol>
+                                <li>Старт в PHP</li>
+                                <li>Основные алгоритмические конструкции</li>
+                                <li>Типы данных в PHP</li>
+                                <li>Сессии и Cookie</li>
+                                <li>Тренажер по PHP</li>
+                            </ol>
+                            <div class="label2">Практика:</div>
+                            <ol>
+                                <li>Сайт-визитка</li>
+                                <li>Решение задач</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="accordion-body">
+                <div class="accordion">
+                    <div class="accordion-futer">
+                        <div class="month">8 месяца</div>
+                        <div class="name">Frontend-разработчик</div>
+                        <div class=" need need-true">На выбор</div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Продвинутая верстка</div>
+                        <div class="content">
+                            <ol>
+                                <li>Продвинутый HTML</li>
+                                <li>Продвинутый CSS</li>
+                                <li>Адаптивная верстка</li>
+                                <li>Тренажер CSS</li>
+                                <li>Анимации</li>
+                                <li>Проект “Верстка лендинга по макету”</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Продвинутый Frontend</div>
+                        <div class="content">
+                            <ol>
+                                <li>Продвинутая работа с объектами в JS</li>
+                                <li>Стандарты написания кода и общие подходы</li>
+                                <li>Асинхронность (AJAX)</li>
+                                <li>API браузера</li>
+                                <li>Введение в принципы построения SPA</li>
+                                <li>Инфраструктура Frontend</li>
+                                <li>Введение в тестирование</li>
+                                <li>Тестирование и линтеры</li>
+                                <li>Взаимодействие с backend. Базы данных</li>
+                                <li>Проект “Таск-менеджер”</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Профориентация и soft skills</div>
+                        <div class="content">
+                            <ol>
+                                <li>Работа в команде и трудоустройство</li>
+                                <li>Работа на фрилансе</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Фреймворк React</div>
+                        <div class="content">
+                            <ol>
+                                <li>React.js: Знакомство</li>
+                                <li>React.js: Components</li>
+                                <li>React.js: Advanced</li>
+                                <li>React.js: Patterns and practice</li>
+                                <li>React.js: High level topics</li>
+                                <li>Тренажер React</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Бонус. TypeScript</div>
+                        <div class="content">
+                            <ol>
+                                <li>Писать программы на TypeScript</li>
+                                <li>Подключать TypeScript к проекту и настраивать</li>
+                                <li>Использовать Typescript в React-проектах</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Финальный проект</div>
+                        <div class="content">
+                            <ol>
+                                <li>Финальный проект. Kanban board</li>
+                                <li>Защита финального проекта</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="accordion-body">
+                <div class="accordion">
+                    <div class="accordion-futer">
+                        <div class="month">8 месяца</div>
+                        <div class="name">Backend-разработчик</div>
+                        <div class=" need need-true">На выбор</div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">SQL и работа с базами данных</div>
+                        <div class="content">
+                            <ol>
+                                <li>Введение в реляционные базы данных</li>
+                                <li>Язык запросов SQL</li>
+                                <li>Транзакции</li>
+                                <li>Продвинутое использование реляционной БД</li>
+                                <li>Тренажер SQL</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Продвинутый Backend</div>
+                        <div class="content">
+                            <ol>
+                                <li>Продвинутые веб-сервера</li>
+                                <li>ООП</li>
+                                <li>MVC</li>
+                                <li>Работа с БД</li>
+                                <li>Авторизация и аутентификация</li>
+                                <li>Конфигурирование приложения</li>
+                                <li>Тестирование приложения</li>
+                                <li>SOLID, паттерны, PSR</li>
+                                <li>Скорость работы приложения</li>
+                                <li>Проект. MVC фреймворк</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Основы администрирования</div>
+                        <div class="content">
+                            <ol>
+                                <li>Linux</li>
+                                <li>Контейнеры и Docker</li>
+                                <li>Проект. Мессенджер</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Фреймворк Laravel</div>
+                        <div class="content">
+                            <ol>
+                                <li>Laravel: Знакомство с фреймворком</li>
+                                <li>Laravel: Основные компоненты</li>
+                                <li>Laravel: Работа с базой данных</li>
+                                <li>Laravel: Расширенный функционал фреймворка</li>
+                                <li>Laravel: Тестирование в Laravel</li>
+                                <li>Тренажер Laravel</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Бонус. TypeScript</div>
+                        <div class="content">
+                            <ol>
+                                <li>Писать программы на TypeScript</li>
+                                <li>Подключать TypeScript к проекту и настраивать</li>
+                                <li>Использовать Typescript в React-проектах</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-container">
+                        <div class="label">Финальный проект</div>
+                        <div class="content">
+                            <ol>
+                                <li>Финальный проект. Партнерская сеть</li>
+                                <li>Защита финального проекта</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>О Нас</h4>
+        <p>Образовательные услуги оказываются АНО ДПО «ШАД».<br>
+            Это Школа анализа данных, основанная КГЭУ.<br>Оказывает услуги на основании Лицензии № 036031 от 24 марта
+            2022 года.</p>
+        <p class="footer__phone">
+            <a class="footer__phone-link t t--1" href="tel:+78002221289"> 8 (800) 222-12-89 </a>
+            <span class="footer__caption p p--3"> Контактный центр </span>
+        </p>
+        <div class="icons">
+            <a style="text-decoration: none"
+                href="https://www.facebook.com/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%9A%D0%93%D0%AD%D0%A3-189258835130676/"
+                class="fa fa-facebook"></a>
+            <a style="text-decoration: none" href="https://twitter.com/kgeuru" class="fa fa-twitter"></a>
+            <a style="text-decoration: none" href="https://www.instagram.com/kgeu_official/"
+                class="fa fa-instagram"></a>
+            <a style="text-decoration: none"
+                href="https://ru.linkedin.com/school/%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%BA%D0%B3%D1%8D%D1%83-/"
+                class="fa fa-linkedin"></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by a student of the KSPUE</p>
+    </section>
+
+
+
+
+
+    <!-- Modall window -->
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="/form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Введите Имя" required>
+                <input type="email" name="email" placeholder="Введите E-mail" required>
+                <input type="phone" name="phone" placeholder="Ваш телефон">
+
+                <button type="submit" class="hero-btn red-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- button arrowUp -->
+    <a href="#up" class="arrowUp">
+        <img src="../icons/up.svg" alt="UP" class="arrowUp">
+    </a>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="../js/script.js"></script>
+</body>

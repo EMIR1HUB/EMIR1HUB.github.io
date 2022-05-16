@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="icon" href="icons/ficons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="up" class="sub_header">
+        <nav>
+            <a class="icon-animation" href="https://kgeu.ru/"><img src="icons/logo2.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- при адаптации под мобильное -->
+                <ul>
+                    <li><a href="/index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="/about.html">О НАС</a></li>
+                    <li><a href="/course.html">КУРС</a></li>
+                    <li><a href="/blog.html">БЛОГ</a></li>
+                    <li><a href="/contact.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>НАШИ КУРСЫ</h1>
+    </section>
+
+    <!-- Курсы  -->
+    <section class="course">
+        <div class="container">
+            <h1>Кому подойдёт этот курс</h1>
+
+            <div class="row">
+                <div class="course-col">
+                    <img src="icons/icon_course1.png" alt="icon">
+                    <h3>Новичкам в веб-разработке</h3>
+                    <p>Вы с нуля изучите основы программирования, научитесь верстать сайты и создадите первые проекты
+                        для
+                        портфолио.</p>
+                </div>
+                <div class="course-col">
+                    <img src="icons/icon_course2.png" alt="icon">
+                    <h3>Начинающим разработчикам</h3>
+                    <p>Вы прокачаете навыки программирования на JavaScript и PHP и расширите круг своих компетенций.</p>
+                </div>
+                <div class="course-col">
+                    <img src="icons/icon_course3.png" alt="icon">
+                    <h3>IT-специалистам</h3>
+                    <p>Вы сможете создавать проекты на JavaScript, программировать на PHP и верстать. Научитесь основам
+                        менеджмента и работе в команде по методике Scrum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="facilities">
+        <div class="container">
+            <h1>Наши услуги</h1>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price1.png" alt="">
+                        <a href="/course/coursFullstackPython.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Fullstack-разработчик на Python»</h3>
+                    <p>Станьте fullstack-разработчиком на Python — программируйте на Python и Javascript, работайте в
+                        штате
+                        или создавайте свои веб-проекты</p><br>
+                    <p>Длительность <span class="month">15 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">3 832 ₽</span> <span class="sale"><s>3 832 ₽</s></span>
+                </div>
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price2.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Fullstack-разработчик на PHP и JavaScript»</h3>
+                    <p>Станьте fullstack-разработчиком — программируйте на PHP и JavaScript. Перезапустите свою карьеру
+                        в
+                        крупной компании. Создавайте масштабные и высокотехнологичные проекты с бекенд частью.
+                        Зарабатывайте, развивая веб-проекты удаленно!</p>
+                    <p>Длительность <span class="month">20 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">3 667 ₽</span> <span class="sale"><s>6 111₽</s></span>
+                </div>
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price3.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Веб-разработчик с нуля»</h3>
+                    <p>Освой престижную профессию веб-разработчика на PHP или Javascript. Создавай адаптивные веб-сайты
+                        или
+                        настраивай Базу данных. Начни зарабатывать уже через 8 месяцев учебы. Тебя ждут интересные
+                        задачи и
+                        простор для творчества. Перезапусти карьеру, работая удаленно!
+                    </p>
+                    <p>Длительность <span class="month">12 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">3 227 ₽</span> <span class="sale"><s>5 378 ₽</s></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price4.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Backend-разработчик на PHP»</h3>
+                    <p>Станьте backend-разработчиком на PHP — освойте востребованную профессию с нуля и получите работу
+                        в
+                        IT.</p><br>
+                    <p>Длительность <span class="month">12 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">3 227 ₽</span> <span class="sale"><s>5 378 ₽</s></span>
+                </div>
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price5.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Frontend-разработчик PRO»</h3>
+                    <p>Станьте прокачанным frontend-разработчиком — освойте с нуля HTML, CSS, JavaScript, TypeScript и
+                        React, создавайте адаптивные веб-сайты и анимацию на страницах, работайте в крупных компаниях
+                    </p>
+                    <p>Длительность <span class="month">15 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">3 025 ₽</span> <span class="sale"><s>5 042₽</s></span>
+                </div>
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price6.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Frontend-разработчик»</h3>
+                    <p>Станьте frontend-разработчиком — освойте с нуля HTML, CSS, Javascript и создавайте адаптивные
+                        веб-сайты — в штате или на фрилансе
+                    </p>
+                    <p>Длительность <span class="month">7 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">1 833 ₽</span> <span class="sale"><s>3 056₽</s></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price7.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Python для веб-разработки»</h3>
+                    <p>Станьте универсальным разработчиком — программируйте на Python, создавайте и поддерживайте
+                        веб-сайты
+                        в штате или на фрилансе</p><br>
+                    <p>Длительность <span class="month">9 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">2 750 ₽</span> <span class="sale"><s>4 583 ₽</s></span>
+                </div>
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price8.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>«Python Django»</h3>
+                    <p>Онлайн-курс по Django. Освойте программирование на Python с нуля, получите необходимые навыки для
+                        создания сайтов и станьте востребованным специалистом.</p>
+                    <p>Длительность <span class="month">10 мес.</span></p><br>
+                    <p>Цена в месяц при беспроцентной рассрочке на 36 месяца</p><br>
+                    <span class="price">2 842 ₽</span> <span class="sale"><s>4 736 ₽</s></span>
+                </div>
+                <div class="facilities-col">
+                    <div class="facilities-col facilities-col_blue">
+                        <img src="img/price9.png" alt="">
+                        <a href="/course/temp.html" class="layer_blue">
+                            <h3>Перейти</h3>
+                        </a>
+                    </div>
+                    <h3>Как стать успешным разработчиком на Python</h3>
+                    <p>Бесплатная карьерная консультация по основам программирования на Python. Узнайте, как стать
+                        успешным
+                        разработчиком и научиться создавать сайты на Python с нуля.
+                    </p><br>
+                    <span class="month">Бесплатно</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta">
+        <section class="container">
+            <h1>Зарегистрируйтесь на онлайн-курсы<br>из любой точки мира</h1>
+            <button data-modal="consultation" href="" class="hero-btn">Связаться с нами</button>
+        </section>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>О Нас</h4>
+        <p>Образовательные услуги оказываются АНО ДПО «ШАД».<br>
+            Это Школа анализа данных, основанная КГЭУ.<br>Оказывает услуги на основании Лицензии № 036031 от 24 марта
+            2022 года.</p>
+        <p class="footer__phone">
+            <a class="footer__phone-link t t--1" href="tel:+78002221289"> 8 (800) 222-12-89 </a>
+            <span class="footer__caption p p--3"> Контактный центр </span>
+        </p>
+        <div class="icons">
+            <a style="text-decoration: none"
+                href="https://www.facebook.com/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%9A%D0%93%D0%AD%D0%A3-189258835130676/"
+                class="fa fa-facebook"></a>
+            <a style="text-decoration: none" href="https://twitter.com/kgeuru" class="fa fa-twitter"></a>
+            <a style="text-decoration: none" href="https://www.instagram.com/kgeu_official/"
+                class="fa fa-instagram"></a>
+            <a style="text-decoration: none"
+                href="https://ru.linkedin.com/school/%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82-%D0%BA%D0%B3%D1%8D%D1%83-/"
+                class="fa fa-linkedin"></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by a student of the KSPUE</p>
+    </section>
+
+    <!-- Modall window -->
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="/form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Введите Имя" required>
+                <input type="email" name="email" placeholder="Введите E-mail" required>
+                <input type="phone" name="phone" placeholder="Ваш телефон">
+                <button type="submit" class="hero-btn red-btn">Заказать консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+
+    <!-- button arrowUp -->
+    <a href="#up" class="arrowUp">
+        <img src="icons/up.svg" alt="UP" class="arrowUp">
+    </a>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
