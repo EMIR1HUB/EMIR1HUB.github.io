@@ -1,4 +1,8 @@
 <?php
+
+require_once 'config/connect.php';      //подключение к БД
+
+// Отправка на почту
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
@@ -9,7 +13,7 @@ $promo =$_POST['promo'];
 
 $email_from = 'emirtesttemp@gmail.com';
 
-$email_subject = 'Обратная связь курсы "КГЭУ"';
+$email_subject = 'Обратная связь курсы "КУРСЫ ВЕБ-РАЗРАБОТЧИКА"';
 
 if($subject){
     $email_body = "Имя Пользователя: $name.\n".
@@ -47,5 +51,14 @@ $headers .= "Ответить на: $visitor_email \r\n";
 
 mail($to,$email_subject,$email_body,$headers);
 
-header("Location: contact.html");
+// -----------------------------------------------------------------------------------------------------------------
+// добавление в базу данных
+mysqli_query($connect, query:"INSERT INTO `singed_up` (`id`, `name`, `email`, `phone`) VALUES (NULL, '$name', '$visitor_email', '$phone')");
+
+/*
+ * Переадресация на главную страницу
+ */
+
+header("Location: index.html");
+
 ?>
