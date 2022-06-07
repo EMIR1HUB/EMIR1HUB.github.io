@@ -6,7 +6,7 @@ require_once 'config/connect.php';      //подключение к БД
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
-$massage = $_POST['message'];
+$message = $_POST['message'];
 $phone =$_POST['phone'];
 $promo =$_POST['promo'];
 
@@ -19,7 +19,7 @@ if($subject){
     $email_body = "Имя Пользователя: $name.\n".
             "Email Пользователя: $visitor_email.\n".
             "Предмет: $subject.\n".
-            "Сообщение: $massage.\n";
+            "Сообщение: $message.\n";
 }
 else{
     if($phone){
@@ -38,7 +38,7 @@ else{
     else{
         $email_body = "Имя Пользователя: $name.\n".
                 "Email Пользователя: $visitor_email.\n".
-                "Сообщение: $massage.\n";
+                "Сообщение: $message.\n";
     }
 }
 
